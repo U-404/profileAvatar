@@ -14,5 +14,17 @@
       <div class="emoji mb-6">💣🤯💥</div>
       <button class="button">Boom?</button>
     </div>
+    <div class="image">
+      <img id="change" src="images/icon-randomphone.png" onclick="change()">
+    </div>
+    <script>
+      // Get the img object using its Id
+      img = document.getElementById("change");
+      // Function to increase image size
+      function change() {
+        // Set image size to 1.5 times original
+        img.style.transform = "scale(1.5)";
+      }
+      </script>
   </body>
 </html>
