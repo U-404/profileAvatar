@@ -8,14 +8,22 @@
       content="Used as a boilerplate for tasks in the 'HTML, CSS and SASS' course in boom.dev"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <script src="js/app.js"/>
+    
   </head>
   <body>
     <div class="main">
       <div class="emoji mb-6">💣🤯💥</div>
       <button class="button">Boom?</button>
     </div>
-    <div class="image">
+    <div class="image" onclick="change()">
+      <img src="images/icon-randomphone.png"/>
     </div>
+    <script>
+    function change() {
+      let img = document.querySelector(".image")
+      img.style.transform = "scale(2)";
+      img.className = "active";
+      console.log(img.className);
+    };</script> 
   </body>
 </html>
